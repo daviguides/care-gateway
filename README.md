@@ -10,14 +10,64 @@
 
 # 🩺 Care Gateway: All-in-One Portfolio Project
 
-<img src="images/diagram.png" alt="Diagram" align="right" style="width: 400px"/>
+<img src="images/diagram.png" alt="Diagram" align="right" style="width: 500px"/>
 
 
-**Care Gateway** is a modular, full-stack healthcare backend system designed to showcase real-world engineering skills across REST APIs, gRPC services, ETL pipelines, and messaging systems. This project reflects hands-on experience with scalable backend systems, domain modeling, and cloud-native design patterns using **PostgreSQL**, **Kafka**, **PySpark**, and multiple Python web frameworks.
+**Care Gateway** is a modular, full-stack backend simulating healthcare claim workflows — built to showcase real-world skills in **APIs**, **gRPC**, **ETL**, and **streaming**.
 
-This repository simulates a healthcare claim submission platform — suitable as a demonstration for engineering roles requiring strong expertise in **Python**, **gRPC**, **API design**, and **data processing**.
+It integrates **PostgreSQL**, **Kafka**, **PySpark**, and Python frameworks (Flask, FastAPI) in a clean, cloud-ready architecture.
+Ideal for demonstrating expertise in **Python**, **API design**, and **data engineering**.
 
 ---
+
+## ✨ Features
+
+### 🧱 Architecture
+
+- ✅ Modular design: APIs, gRPC, ETL, DB
+- 📦 Clear Python structure — easy to navigate, extend, test
+- 🧭 Real-world healthcare domain (claims, eligibility, EDI)
+
+### 🌐 APIs & Services
+
+- 🌐 **Flask** (sync) with SQLAlchemy + Marshmallow
+- ⚡ **FastAPI** (async) with SQLModel
+- 🔌 **gRPC** microservice for backend logic
+- 🔁 Kafka integration for event-driven flows
+
+### 💾 Data & Storage
+
+- 🐘 PostgreSQL — shared across all modules
+- 🔄 Dual ORM: SQLAlchemy + SQLModel
+- 📜 Alembic — schema migrations
+
+### ⚙️ ETL & Processing
+
+- 🔥 PySpark worker — parses EDI 837 files
+- 🧬 `databricksx12` — EDI → flattened DB model
+- 📩 Kafka trigger → file ingestion → DB
+
+### 🧪 Testing & Dev Tools
+
+- ✅ Full coverage (unit, async, gRPC, API)
+- 🧰 Makefile — CLI for setup, tests, migrations
+- 🧪 Manual test file (`.http`) included
+
+### ☁️ Deployment Ready
+
+- 🐳 Docker-friendly design
+- ☁️ Cloud-ready (EKS + GitOps aligned)
+
+### 🧪 Testing & Tooling
+
+- ✅ **Full test coverage** — Unit, integration, and async tests using `pytest` and `pytest-asyncio`
+- 🧰 **CLI tools** — Pre-configured `Makefile` for tasks like DB migration and test execution
+- 📄 **Manual test client** — `.http` file for quick REST endpoint testing
+
+### ☁️ Deployment & Extensibility
+
+- 🐳 **Docker-compatible design** — Easy to containerize and deploy
+- ☁️ **Cloud-ready structure** — Compatible with EKS + EC2 and GitOps workflows
 
 ## ⭐ Related Projects
 
