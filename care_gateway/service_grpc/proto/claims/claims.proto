@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package claims;
+
+service ClaimsService {
+  rpc SubmitClaim(ClaimRequest) returns (ClaimResponse);
+}
+
+message ClaimRequest {
+  string claim_id = 1;
+}
+
+message ClaimResponse {
+  string claim_id = 1;
+  bool success = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package eligibility;
+
+service EligibilityService {
+  rpc CheckEligibility(EligibilityRequest) returns (EligibilityResponse) {}
+}
+
+message EligibilityRequest {
+  string patient_id = 1;
+}
+
+message EligibilityResponse {
+  string patient_id = 1;
+  string status = 2; // ELIGIBLE, NOT_ELIGIBLE, REVIEW
+}
