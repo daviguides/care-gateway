@@ -18,61 +18,49 @@
 It integrates **PostgreSQL**, **Kafka**, **PySpark**, and Python frameworks (Flask, FastAPI) in a clean, cloud-ready architecture.
 Ideal for demonstrating expertise in **Python**, **API design**, and **data engineering**.
 
+## ⭐ Related Projects
+
+- 🔗 [sftp2s3](https://github.com/daviguides/sftp2s3): Syncs files from SFTP to S3 — ideal for upstream EDI flow.
+- 🔗 [sftp-aws-cdk-infra](https://github.com/daviguides/sftp-aws-cdk-infra): Provisions AWS Transfer Family SFTP with AWS CDK — secure ingestion pipelines.
+- 🔗 [keysentinel](https://github.com/daviguides/keysentinel): Local token management with layered security — built for zero-trust systems.
+- 🔗 [lettuce-events](https://github.com/daviguides/lettuce-events): Minimal event-driven app using RabbitMQ — clean pub/sub architecture for async flows.
+
 ---
 
 ## ✨ Features
 
-### 🧱 Architecture
+### Architecture
 
-- ✅ Modular design: APIs, gRPC, ETL, DB
-- 📦 Clear Python structure — easy to navigate, extend, test
-- 🧭 Real-world healthcare domain (claims, eligibility, EDI)
+- Modular: APIs, gRPC, ETL, DB — real-world healthcare flows (claims, eligibility, EDI)
+- Clean Python structure — designed for clarity, reuse, and testing
 
-### 🌐 APIs & Services
+### APIs & Services
 
-- 🌐 **Flask** (sync) with SQLAlchemy + Marshmallow
-- ⚡ **FastAPI** (async) with SQLModel
-- 🔌 **gRPC** microservice for backend logic
-- 🔁 Kafka integration for event-driven flows
+- REST with Flask + SQLAlchemy (sync) and FastAPI + SQLModel (async)
+- gRPC microservice — shared backend logic
+- Kafka integration — async, event-driven design
 
-### 💾 Data & Storage
+### Data Layer
 
-- 🐘 PostgreSQL — shared across all modules
-- 🔄 Dual ORM: SQLAlchemy + SQLModel
-- 📜 Alembic — schema migrations
+- PostgreSQL — shared DB
+- Dual ORM: SQLAlchemy + SQLModel
+- Alembic — migrations ready
 
-### ⚙️ ETL & Processing
+### ETL Pipeline
 
-- 🔥 PySpark worker — parses EDI 837 files
-- 🧬 `databricksx12` — EDI → flattened DB model
-- 📩 Kafka trigger → file ingestion → DB
+- PySpark worker + databricksx12 — parses EDI 837 → flattens to DB
+- Kafka triggers ingestion on file arrival
 
-### 🧪 Testing & Dev Tools
+### Dev & Testing
 
-- ✅ Full coverage (unit, async, gRPC, API)
-- 🧰 Makefile — CLI for setup, tests, migrations
-- 🧪 Manual test file (`.http`) included
+- Full coverage: REST, gRPC, async
+- Makefile for migrations, tests, bootstrap
+- .http test file for manual requests
 
-### ☁️ Deployment Ready
+### Cloud Ready
 
-- 🐳 Docker-friendly design
-- ☁️ Cloud-ready (EKS + GitOps aligned)
-
-### 🧪 Testing & Tooling
-
-- ✅ **Full test coverage** — Unit, integration, and async tests using `pytest` and `pytest-asyncio`
-- 🧰 **CLI tools** — Pre-configured `Makefile` for tasks like DB migration and test execution
-- 📄 **Manual test client** — `.http` file for quick REST endpoint testing
-
-### ☁️ Deployment & Extensibility
-
-- 🐳 **Docker-compatible design** — Easy to containerize and deploy
-- ☁️ **Cloud-ready structure** — Compatible with EKS + EC2 and GitOps workflows
-
-## ⭐ Related Projects
-
-- 🔗 [sftp2s3](https://github.com/daviguides/sftp2s3): Syncs files from SFTP to S3 — ideal for the upstream flow of EDI files.
-- 🔗 [eks-terraform-ansible-gitops](https://github.com/daviguides/eks-terraform-ansible-gitops): AWS EKS with EC2 nodes using CDK + Terraform — useful for deploying these services.
+- Docker-friendly
+- EKS-ready — CDK + GitOps compatible
 
 ---
 
