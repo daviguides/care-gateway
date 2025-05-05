@@ -22,7 +22,8 @@ The project emphasizes simplicity, transparency, and human-centered design—mir
 
 ## ⭐ My Related Projects
 
-- [sftp2s3](https://github.com/daviguides/sftp2s3): Syncs files from SFTP to S3 — ideal for upstream EDI flow.
+- [eks-ec2-cdk-react-dns-demo](https://github.com/daviguides/eks-ec2-cdk-react-dns-demo): Deploys EKS (EC2) with AWS CDK, runs containerized apps (incl. React), routes via Route53 — sharp, real-world IaC. Pairs naturally with Care Gateway as next deployment step.
+- [sftp2s3](https://github.com/daviguides/sftp2s3): Syncs files from SFTP to S3 — used as the upstream file drop in the Care Gateway pipeline, triggering Kafka events when `.edi` claim files land in the bucket.
 - [sftp-aws-cdk-infra](https://github.com/daviguides/sftp-aws-cdk-infra): Provisions AWS Transfer Family SFTP with AWS CDK — secure ingestion pipelines.
 - [keysentinel](https://github.com/daviguides/keysentinel): Local token management with layered security — built for zero-trust systems.
 - [lettuce-events](https://github.com/daviguides/lettuce-events): Minimal event-driven app using RabbitMQ — clean pub/sub architecture for async flows.
