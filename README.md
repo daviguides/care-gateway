@@ -253,4 +253,4 @@ This project was built with a focus on demonstrating **integration of multiple t
 
 Built with ❤️ by [Davi Luiz Guides](http://daviguides.github.io)
 
-<img src="images/care.png" alt="Diagram" align="left" style="width: 500px"/>
+<img src="images/care.png" alt="Diagram" align="left" style="width: 600px"/>
