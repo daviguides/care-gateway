@@ -27,6 +27,19 @@ The project emphasizes simplicity, transparency, and human-centered design—mir
 - 🔗 [keysentinel](https://github.com/daviguides/keysentinel): Local token management with layered security — built for zero-trust systems.
 - 🔗 [lettuce-events](https://github.com/daviguides/lettuce-events): Minimal event-driven app using RabbitMQ — clean pub/sub architecture for async flows.
 
+### 🛡️ Security Articles by Me
+
+A look into the ideas, experiments, and lessons behind my code:
+
+- 🧠 [Zero Trust Local Environment Manifesto](https://daviguides.github.io/articles/devsecops/2025/04/25/zero-trust-manifest.html)
+  A philosophy for CLI tools that assumes breach, encrypts everything, and stores nothing sensitive in plaintext.
+
+- 🛠️ [Building a Secure Token CLI in Python](https://daviguides.github.io/articles/devsecops/2025/04/24/bulding-secure-cli-python.html)
+  Guide to building secure token tools using local key rotation and encrypted vaults.
+
+- 📋 [Understanding SOC Audits in Cybersecurity](https://daviguides.github.io/articles/cybersecurity/2025/04/24/soc_audits.html)
+  Overview of SOC 1, SOC 2, and SOC 3 audits, plus how they fit into trust evaluations and compliance.
+
 ---
 
 ## ✨ Features
