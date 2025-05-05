@@ -18,7 +18,9 @@
 It integrates **PostgreSQL**, **Kafka**, **PySpark**, and Python frameworks (Flask, FastAPI) in a clean, cloud-ready architecture.
 Ideal for demonstrating expertise in **Python**, **API design**, and **data engineering**.
 
-## ⭐ Related Projects
+The project emphasizes simplicity, transparency, and human-centered design—mirroring values found in modern healthtech platforms. Each component is crafted to reflect practical scenarios, from claim ingestion to real-time processing, with clear structure and extensibility.
+
+## ⭐ My Related Projects
 
 - 🔗 [sftp2s3](https://github.com/daviguides/sftp2s3): Syncs files from SFTP to S3 — ideal for upstream EDI flow.
 - 🔗 [sftp-aws-cdk-infra](https://github.com/daviguides/sftp-aws-cdk-infra): Provisions AWS Transfer Family SFTP with AWS CDK — secure ingestion pipelines.
