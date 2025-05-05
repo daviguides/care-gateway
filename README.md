@@ -1,5 +1,15 @@
 # 🩺 Care Gateway: All-in-One Portfolio Project
 
+<p align="center">
+  <a href="./SECURITY.md"><img src="https://img.shields.io/badge/security-zero%20trust-blue"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg"></a>
+  <a href="http://daviguides.github.io"><img src="https://img.shields.io/badge/built%20with-%E2%9D%A4%EF%B8%8F%20by%20Davi%20Guides-orange"></a>
+  <a href="https://daviguides.github.io/articles/devsecops/2025/04/25/zero-trust-manifest.html"><img src="https://img.shields.io/badge/read-architecture%20article-blueviolet"></a>
+  <a href="https://daviguides.github.io/keysentinel/"><img src="https://img.shields.io/badge/docs-online-blue"></a>
+  <img src="https://img.shields.io/badge/tests-passing-brightgreen">
+  <img src="https://img.shields.io/badge/coverage-100%25-brightgreen">
+</p>
+
 **Care Gateway** is a modular, full-stack healthcare backend system designed to showcase real-world engineering skills across REST APIs, gRPC services, ETL pipelines, and messaging systems. This project reflects hands-on experience with scalable backend systems, domain modeling, and cloud-native design patterns using **PostgreSQL**, **Kafka**, **PySpark**, and multiple Python web frameworks.
 
 This repository simulates a healthcare claim submission platform — suitable as a demonstration for engineering roles requiring strong expertise in **Python**, **gRPC**, **API design**, and **data processing**.
