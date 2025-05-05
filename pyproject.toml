@@ -1,0 +1,70 @@
+[project]
+name = "care_gateway"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+
+dependencies = [
+    "alembic>=1.15.2",
+    "asyncpg>=0.30.0",
+    "flask>=3.1.0",
+    "greenlet>=3.2.1",
+    "httpx>=0.28.1",
+    "jupyter>=1.1.1",
+    "marshmallow>=4.0.0",
+    "pandas>=2.2.3",
+    "psycopg[binary]>=3.2.7",
+    "pyspark>=3.5.5",
+    "pytest-cov>=6.1.1",
+    "rich>=14.0.0",
+    "sqlalchemy>=2.0.40",
+    "sqlmodel>=0.0.24",
+]
+
+[tool.setuptools]
+packages = ["care_gateway"]
+
+[tool.uv.sources]
+databricksx12 = { git = "https://github.com/databricks-industry-solutions/x12-edi-parser" }
+
+[dependency-groups]
+
+# gRPC server and .proto tools
+grpcio-server = [
+    "grpcio>=1.71.0",          # Core gRPC support
+    "grpcio-tools>=1.71.0",    # Generates Python code from .proto files
+]
+
+# ETL worker with Spark, Kafka, and database integration
+worker-kafka-spark = [
+    "pyspark",                 # Apache Spark for distributed processing
+    "databricksx12",           # Parses and flattens EDI 837 files
+    "sqlalchemy",              # ORM used in Flask and ETL scripts
+    "sqlmodel",                # ORM for FastAPI and async tasks
+    "psycopg[binary]",         # PostgreSQL driver for both ORMs
+    "pandas",                  # Optional: local inspection and dataframes
+    "aiokafka",                # Async Kafka client for workers
+    "asyncpg",                 # Async PostgreSQL driver
+]
+
+# FastAPI REST API with PostgreSQL
+api-fastapi = [
+    "fastapi>=0.115.12",       # Web framework with OpenAPI
+    "psycopg[binary]>=3.2.7",  # PostgreSQL support
+    "sqlmodel>=0.0.24",        # ORM and schema validation
+    "uvicorn>=0.34.2",         # ASGI server for FastAPI
+]
+
+# Developer tools and code quality
+dev = [
+    "ipdb>=0.13.13", # Debugger for development
+    "ipykernel>=6.29.5", # Jupyter kernel
+    "ipython>=9.2.0", # Interactive shell
+    "pre-commit>=4.2.0", # Git hook runner
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "ruff>=0.11.8", # Fast linter and formatter
+    "sqlalchemy-utils>=0.41.2",
+]
