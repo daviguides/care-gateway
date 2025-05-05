@@ -1,0 +1,35 @@
+### Check Eligibility (valid)
+GET http://127.0.0.1:5000/eligibility?patient_id=A123
+Accept: application/json
+
+###
+
+### Check Eligibility (not eligible)
+GET http://127.0.0.1:5000/eligibility?patient_id=Z999
+Accept: application/json
+
+###
+
+### Submit Claim (success)
+POST http://127.0.0.1:5000/claim_events/submit
+Content-Type: application/jso
+
+{
+  "claim_id": "CLM123"
+}
+
+###
+
+### Submit Claim (fail - starts with X)
+POST http://127.0.0.1:5000/claim_events/submit
+Content-Type: application/json
+
+{
+  "claim_id": "XFAIL001"
+}
+
+###
+
+### Just a "Health" Check
+GET http://127.0.0.1:5000/hello?name=Davi
+Accept: application/json
