@@ -27,7 +27,7 @@ The project emphasizes simplicity, transparency, and human-centered design—mir
 - [keysentinel](https://github.com/daviguides/keysentinel): Local token management with layered security — built for zero-trust systems.
 - [lettuce-events](https://github.com/daviguides/lettuce-events): Minimal event-driven app using RabbitMQ — clean pub/sub architecture for async flows.
 
-### 🛡️ Security Articles by Me
+## 🛡️ Security Articles by Me
 
 A look into the ideas, experiments, and lessons behind my code:
 
@@ -40,39 +40,37 @@ A look into the ideas, experiments, and lessons behind my code:
 - [Understanding SOC Audits in Cybersecurity](https://daviguides.github.io/articles/cybersecurity/2025/04/24/soc_audits.html)
   Overview of SOC 1, SOC 2, and SOC 3 audits, plus how they fit into trust evaluations and compliance.
 
----
-
 ## ✨ Features
 
-### Architecture
+#### Architecture
 
 - Modular: APIs, gRPC, ETL, DB — real-world healthcare flows (claims, eligibility, EDI)
 - Clean Python structure — designed for clarity, reuse, and testing
 
-### APIs & Services
+#### APIs & Services
 
 - REST with Flask + SQLAlchemy (sync) and FastAPI + SQLModel (async)
 - gRPC microservice — shared backend logic
 - Kafka integration — async, event-driven design
 
-### Data Layer
+#### Data Layer
 
 - PostgreSQL — shared DB
 - Dual ORM: SQLAlchemy + SQLModel
 - Alembic — migrations ready
 
-### ETL Pipeline
+#### ETL Pipeline
 
 - PySpark worker + databricksx12 — parses EDI 837 → flattens to DB
 - Kafka triggers ingestion on file arrival
 
-### Dev & Testing
+#### Dev & Testing
 
 - Full coverage: REST, gRPC, async
 - Makefile for migrations, tests, bootstrap
 - .http test file for manual requests
 
-### Cloud Ready
+#### Cloud Ready
 
 - Docker-friendly
 - EKS-ready — CDK + GitOps compatible
