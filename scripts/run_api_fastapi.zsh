@@ -1,0 +1,1 @@
+uvicorn care_gateway.api_fastapi.app:app --reload

@@ -1,0 +1,270 @@
+[
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "PREMIER BILLING SERVICE",
+      "sbmtter_contact_name": "JERRY",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "3055552222"
+        ],
+        [
+          "EX",
+          "231"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "KEY INSURANCE COMPANY"
+    },
+    "subscriber": {
+      "subsciber_identifier": "JS00111223333",
+      "name": "SMITH JANE ",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "",
+      "street": "236 N MAIN ST",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33413",
+      "dob": "19430501",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "SY",
+      "id": "123450000"
+    },
+    "patient": {
+      "subsciber_identifier": "",
+      "name": "SMITH TED ",
+      "patient_relationship_cd": "19",
+      "subscriber_relationship_cd": "18",
+      "street": "237 N MAIN ST",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33413",
+      "dob": "19730501",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "4N",
+      "id": "ServiceAuthorizationExceptionCode"
+    },
+    "payer": {
+      "payer_name": "KEY INSURANCECOMPANY",
+      "payer_identifier": "999996666",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "9876543210",
+        "entity_type": "Organization",
+        "name": "BEN KILDARE SERVICE",
+        "street": "234 SEAWAY ST",
+        "city": "MIAMI",
+        "state": "FL",
+        "zip": "33111",
+        "ein_type": "EI",
+        "ein": "587654321",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "5234567805",
+        "entity_type": "Individual",
+        "name": "DOE JONE C",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "1234567804",
+        "entity_type": "Individual",
+        "name": "DOE JANE C",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "000000000X",
+        "provider_role": "PE"
+      },
+      "service_facility": {
+        "npi": "000000004",
+        "entity_type": "Organization",
+        "name": "Service Facility",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "36463774",
+      "claim_amount": "100",
+      "facility_type_code": "11:B:1",
+      "claim_dates": [
+        {
+          "date_cd": "431",
+          "date_format": "D8",
+          "date": "20180312"
+        },
+        {
+          "date_cd": "454",
+          "date_format": "D8",
+          "date": "20180301"
+        },
+        {
+          "date_cd": "304",
+          "date_format": "D8",
+          "date": "20050108"
+        },
+        {
+          "date_cd": "453",
+          "date_format": "D8",
+          "date": "20180302"
+        },
+        {
+          "date_cd": "439",
+          "date_format": "D8",
+          "date": "20050108"
+        },
+        {
+          "date_cd": "484",
+          "date_format": "D8",
+          "date": "20050108"
+        },
+        {
+          "date_cd": "455",
+          "date_format": "D8",
+          "date": "20050108"
+        },
+        {
+          "date_cd": "435",
+          "date_format": "D8",
+          "date": "20050508"
+        },
+        {
+          "date_cd": "096",
+          "date_format": "D8",
+          "date": "20050608"
+        },
+        {
+          "date_cd": "090",
+          "date_format": "D8",
+          "date": "20050608"
+        },
+        {
+          "date_cd": "091",
+          "date_format": "D8",
+          "date": "20050608"
+        },
+        {
+          "date_cd": "444",
+          "date_format": "D8",
+          "date": "20041013"
+        },
+        {
+          "date_cd": "050",
+          "date_format": "D8",
+          "date": "20051030"
+        },
+        {
+          "date_cd": "314",
+          "date_format": "RD8",
+          "date": "20050608-20050609"
+        },
+        {
+          "date_cd": "573",
+          "date_format": "D8",
+          "date": "20190310"
+        }
+      ],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20050314-20050325",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "40",
+        "prcdr_cd": "99299",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "26,27,28,29",
+        "place_of_service": "11",
+        "dg_cd_pntr": "1:2",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "2",
+        "service_date": "20061003",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "15",
+        "prcdr_cd": "87099",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "",
+        "place_of_service": "",
+        "dg_cd_pntr": "1",
+        "date_format": "D8"
+      },
+      {
+        "claim_line_number": "3",
+        "service_date": "",
+        "service_time": "",
+        "service_date_format": "",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "35",
+        "prcdr_cd": "99214",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "",
+        "place_of_service": "",
+        "dg_cd_pntr": "2",
+        "date_format": ""
+      },
+      {
+        "claim_line_number": "4",
+        "service_date": "20061010",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "10",
+        "prcdr_cd": "86663",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "",
+        "place_of_service": "",
+        "dg_cd_pntr": "2",
+        "date_format": "D8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "J0300",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "837P-all-fields.json"
+  }
+]

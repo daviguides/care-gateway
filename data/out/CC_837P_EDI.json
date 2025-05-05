@@ -1,0 +1,170 @@
+[
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "Centene Corporation",
+      "sbmtter_contact_name": "Sambit",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "3143202264"
+        ],
+        [
+          "EX",
+          "8099264"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "Centene Corporation"
+    },
+    "subscriber": {
+      "subsciber_identifier": "U0000000001",
+      "name": "TEST MEMBER ",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "123 MAIN STREET",
+      "city": "Elgin",
+      "state": "IL",
+      "zip": "601200001",
+      "dob": "19960215",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "U0000000001",
+      "name": "TEST MEMBER ",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "123 MAIN STREET",
+      "city": "Elgin",
+      "state": "IL",
+      "zip": "601200001",
+      "dob": "19960215",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "CENTENE",
+      "payer_identifier": "421406317",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "9999999999",
+        "entity_type": "Organization",
+        "name": "Test Provider",
+        "street": "123 MAIN STREET",
+        "city": "WOODSTOCK",
+        "state": "IL",
+        "zip": "600980000",
+        "ein_type": "EI",
+        "ein": "999999999",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "service_facility": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "TD-R192ICE00094",
+      "claim_amount": "600",
+      "facility_type_code": "11:B:1",
+      "claim_dates": [
+        {
+          "date_cd": "435",
+          "date_format": "D8",
+          "date": "20180625"
+        }
+      ],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180625-20180625",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "12",
+        "units_measurement": "UN",
+        "line_chrg_amt": "300",
+        "prcdr_cd": "H0004",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "HO,HQ",
+        "place_of_service": "11",
+        "dg_cd_pntr": "1:2",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "2",
+        "service_date": "20180629-20180629",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "12",
+        "units_measurement": "UN",
+        "line_chrg_amt": "300",
+        "prcdr_cd": "H0004",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "HO,HQ",
+        "place_of_service": "11",
+        "dg_cd_pntr": "1:2",
+        "date_format": "RD8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F341",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "CC_837P_EDI.json"
+  }
+]

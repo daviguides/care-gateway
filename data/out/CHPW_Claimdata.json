@@ -1,0 +1,737 @@
+[
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "CLEARINGHOUSE LLC",
+      "sbmtter_contact_name": "CLEARINGHOUSE CLIENT SERVICES",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "8005551212"
+        ],
+        [
+          "FX",
+          "8005551212"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "123456789"
+    },
+    "subscriber": {
+      "subsciber_identifier": "987321",
+      "name": "SUBSCRIBER JOHN J",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "987 65TH PL",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640001",
+      "dob": "19881225",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "987321",
+      "name": "SUBSCRIBER JOHN J",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "987 65TH PL",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640001",
+      "dob": "19881225",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "COMMUNITY HEALTH PLAN OF WASHINGTON",
+      "payer_identifier": "CHPWA",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "12345 MAIN ST",
+        "city": "VANCOUVER",
+        "state": "WA",
+        "zip": "98662",
+        "ein_type": "EI",
+        "ein": "720000000",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "1112223338",
+        "entity_type": "Individual",
+        "name": "PROVIDER JAMES ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "261QR0405X",
+        "provider_role": "PE"
+      },
+      "service_facility": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "1805080AV3648339",
+      "claim_amount": "20",
+      "facility_type_code": "57:B:1",
+      "claim_dates": [],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180428",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "20",
+        "prcdr_cd": "H0003",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "",
+        "place_of_service": "",
+        "dg_cd_pntr": "1",
+        "date_format": "D8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F1120",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "CHPW_Claimdata.json"
+  },
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "CLEARINGHOUSE LLC",
+      "sbmtter_contact_name": "CLEARINGHOUSE CLIENT SERVICES",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "8005551212"
+        ],
+        [
+          "FX",
+          "8005551212"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "123456789"
+    },
+    "subscriber": {
+      "subsciber_identifier": "765123",
+      "name": "PATIENT SUSAN E",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "765 43RD ST",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640002",
+      "dob": "19881031",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "765123",
+      "name": "PATIENT SUSAN E",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "765 43RD ST",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640002",
+      "dob": "19881031",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "COMMUNITY HEALTH PLAN OF WASHINGTON",
+      "payer_identifier": "CHPWA",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "12345 MAIN ST",
+        "city": "VANCOUVER",
+        "state": "WA",
+        "zip": "98662",
+        "ein_type": "EI",
+        "ein": "720000000",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "1112223346",
+        "entity_type": "Individual",
+        "name": "PROVIDER SUSAN ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "261QR0405X",
+        "provider_role": "PE"
+      },
+      "service_facility": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "1805080AV3648347",
+      "claim_amount": "50.1",
+      "facility_type_code": "57:B:1",
+      "claim_dates": [],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180426",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "6",
+        "units_measurement": "UN",
+        "line_chrg_amt": "50.1",
+        "prcdr_cd": "96153",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "HF",
+        "place_of_service": "",
+        "dg_cd_pntr": "1:2",
+        "date_format": "D8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F1520",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "CHPW_Claimdata.json"
+  },
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "CLEARINGHOUSE LLC",
+      "sbmtter_contact_name": "CLEARINGHOUSE CLIENT SERVICES",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "8005551212"
+        ],
+        [
+          "FX",
+          "8005551212"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "123456789"
+    },
+    "subscriber": {
+      "subsciber_identifier": "987321",
+      "name": "SUBSCRIBER JOHN J",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "987 65TH PL",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640001",
+      "dob": "19881225",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "987321",
+      "name": "SUBSCRIBER JOHN J",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "987 65TH PL",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640001",
+      "dob": "19881225",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "COMMUNITY HEALTH PLAN OF WASHINGTON",
+      "payer_identifier": "CHPWA",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "12345 MAIN ST",
+        "city": "VANCOUVER",
+        "state": "WA",
+        "zip": "98662",
+        "ein_type": "EI",
+        "ein": "720000000",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "1112223346",
+        "entity_type": "Individual",
+        "name": "PROVIDER SUSAN ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "261QR0405X",
+        "provider_role": "PE"
+      },
+      "service_facility": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "1805080AV3648340",
+      "claim_amount": "11.64",
+      "facility_type_code": "57:B:1",
+      "claim_dates": [],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180427",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "11.64",
+        "prcdr_cd": "T1017",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "HF",
+        "place_of_service": "",
+        "dg_cd_pntr": "1:2",
+        "date_format": "D8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F1020",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "CHPW_Claimdata.json"
+  },
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "CLEARINGHOUSE LLC",
+      "sbmtter_contact_name": "CLEARINGHOUSE CLIENT SERVICES",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "8005551212"
+        ],
+        [
+          "FX",
+          "8005551212"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "123456789"
+    },
+    "subscriber": {
+      "subsciber_identifier": "765123",
+      "name": "PATIENT SUSAN E",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "765 43RD ST",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640002",
+      "dob": "19881031",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "765123",
+      "name": "PATIENT SUSAN E",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "765 43RD ST",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640002",
+      "dob": "19881031",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "COMMUNITY HEALTH PLAN OF WASHINGTON",
+      "payer_identifier": "CHPWA",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "12345 MAIN ST",
+        "city": "VANCOUVER",
+        "state": "WA",
+        "zip": "98662",
+        "ein_type": "EI",
+        "ein": "720000000",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "1112223346",
+        "entity_type": "Individual",
+        "name": "PROVIDER SUSAN ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "251S00000X",
+        "provider_role": "PE"
+      },
+      "service_facility": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "1805080AV3648353",
+      "claim_amount": "234",
+      "facility_type_code": "53:B:1",
+      "claim_dates": [],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180427",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "120",
+        "units_measurement": "UN",
+        "line_chrg_amt": "234",
+        "prcdr_cd": "90853",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "",
+        "place_of_service": "",
+        "dg_cd_pntr": "1",
+        "date_format": "D8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F251",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "CHPW_Claimdata.json"
+  },
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "CLEARINGHOUSE LLC",
+      "sbmtter_contact_name": "CLEARINGHOUSE CLIENT SERVICES",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "8005551212"
+        ],
+        [
+          "FX",
+          "8005551212"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "123456789"
+    },
+    "subscriber": {
+      "subsciber_identifier": "987321",
+      "name": "SUBSCRIBER JOHN J",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "987 65TH PL",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640001",
+      "dob": "19881225",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "987321",
+      "name": "SUBSCRIBER JOHN J",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "987 65TH PL",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "986640001",
+      "dob": "19881225",
+      "dob_format": "D8",
+      "gender_cd": "M",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "COMMUNITY HEALTH PLAN OF WASHINGTON",
+      "payer_identifier": "CHPWA",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "12345 MAIN ST",
+        "city": "VANCOUVER",
+        "state": "WA",
+        "zip": "98662",
+        "ein_type": "EI",
+        "ein": "720000000",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "referring": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "servicing": {
+        "npi": "1112223338",
+        "entity_type": "Individual",
+        "name": "PROVIDER JAMES ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "261QR0405X",
+        "provider_role": "PE"
+      },
+      "service_facility": {
+        "npi": "1122334455",
+        "entity_type": "Organization",
+        "name": "BH CLINIC OF VANCOUVER",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "1805080AV3648355",
+      "claim_amount": "20",
+      "facility_type_code": "57:B:1",
+      "claim_dates": [],
+      "admission_type": "",
+      "admission_src_cd": "",
+      "discharge_status_cd": "",
+      "encounter_id": "",
+      "drg_cd": ""
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180427",
+        "service_time": "472",
+        "service_date_format": "D8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "20",
+        "prcdr_cd": "H0003",
+        "prcdr_cd_type": "HC",
+        "modifier_cds": "",
+        "place_of_service": "",
+        "dg_cd_pntr": "1:2",
+        "date_format": "D8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F1020",
+      "admitting_dx_cd": "",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": ""
+    },
+    "source_file": "CHPW_Claimdata.json"
+  }
+]

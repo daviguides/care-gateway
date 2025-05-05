@@ -1,0 +1,289 @@
+[
+  {
+    "submitter": {
+      "type": "Organization",
+      "name": "TALEND",
+      "sbmtter_contact_name": "SAMBIT",
+      "sbmtter_contacts": [
+        [
+          "TE",
+          "3143202264"
+        ],
+        [
+          "EX",
+          "8099264"
+        ]
+      ]
+    },
+    "receiver": {
+      "type": "Organization",
+      "name": "CENTENE CORP"
+    },
+    "subscriber": {
+      "subsciber_identifier": "U0000000001",
+      "name": "TEST MEMBER ",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "123 MAIN STREET",
+      "city": "Elgin",
+      "state": "IL",
+      "zip": "601200001",
+      "dob": "19960215",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "patient": {
+      "subsciber_identifier": "U0000000001",
+      "name": "TEST MEMBER ",
+      "patient_relationship_cd": "",
+      "subscriber_relationship_cd": "18",
+      "street": "123 MAIN STREET",
+      "city": "Elgin",
+      "state": "IL",
+      "zip": "601200001",
+      "dob": "19960215",
+      "dob_format": "D8",
+      "gender_cd": "F",
+      "mrn": "",
+      "id": ""
+    },
+    "payer": {
+      "payer_name": "CENTENE",
+      "payer_identifier": "421406317",
+      "payer_identifier_cd": "PI",
+      "business_entity_type": "2"
+    },
+    "providers": {
+      "billing": {
+        "npi": "9999999999",
+        "entity_type": "Organization",
+        "name": "Test Provider",
+        "street": "123 MAIN STREET",
+        "city": "WOODSTOCK",
+        "state": "IL",
+        "zip": "600980000",
+        "ein_type": "EI",
+        "ein": "999999999",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "attending": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "D9",
+        "ein": "TD-R192ICE00087",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "operating": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "other": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      },
+      "facility": {
+        "npi": "",
+        "entity_type": "Individual",
+        "name": "  ",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "ein_type": "",
+        "ein": "",
+        "taxonomy": "",
+        "provider_role": ""
+      }
+    },
+    "claim_header": {
+      "claim_id": "TD-R192ICE00087",
+      "claim_amount": "17166.7",
+      "facility_type_code": "11:A:1",
+      "claim_dates": [
+        {
+          "date_cd": "096",
+          "date_format": "TM",
+          "date": "0900"
+        },
+        {
+          "date_cd": "434",
+          "date_format": "RD8",
+          "date": "20180628-20180702"
+        },
+        {
+          "date_cd": "435",
+          "date_format": "DT",
+          "date": "201806280800"
+        }
+      ],
+      "admission_type": "1",
+      "admission_src_cd": "1",
+      "discharge_status_cd": "01",
+      "encounter_id": "",
+      "drg_cd": "DR:885"
+    },
+    "claim_lines": [
+      {
+        "claim_line_number": "1",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "4",
+        "units_measurement": "UN",
+        "line_chrg_amt": "9148",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0124",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "2",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "28",
+        "units_measurement": "UN",
+        "line_chrg_amt": "48.1",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0250",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "3",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "133",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0260",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "4",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "32.9",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0300",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "5",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "4",
+        "units_measurement": "UN",
+        "line_chrg_amt": "798.5",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0301",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "6",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "2",
+        "units_measurement": "UN",
+        "line_chrg_amt": "200.6",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0305",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "7",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "1",
+        "units_measurement": "UN",
+        "line_chrg_amt": "175",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0306",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "8",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "2",
+        "units_measurement": "UN",
+        "line_chrg_amt": "113.6",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0307",
+        "date_format": "RD8"
+      },
+      {
+        "claim_line_number": "9",
+        "service_date": "20180628-20180702",
+        "service_time": "472",
+        "service_date_format": "RD8",
+        "units": "2",
+        "units_measurement": "UN",
+        "line_chrg_amt": "6517",
+        "prcdr_cd": "",
+        "prcdr_cd_type": "",
+        "modifier_cds": "",
+        "revenue_cd": "0351",
+        "date_format": "RD8"
+      }
+    ],
+    "diagnosis": {
+      "principal_dx_cd": "F39",
+      "admitting_dx_cd": "F39",
+      "reason_visit_dx_cd": "",
+      "external_injury_dx_cd": "",
+      "other_dx_cds": "F1319,F419,F17210,E876"
+    },
+    "source_file": "CC_837I_EDI.json"
+  }
+]
