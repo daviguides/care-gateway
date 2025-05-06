@@ -43,3 +43,11 @@ db-drop:
 db-reset:
 	dropdb claims_db --if-exists
 	createdb claims_db
+
+test:
+	export ENVIRONMENT=test && pytest -c ./config/pytest.ini
+
+cov:
+	export ENVIRONMENT=test && pytest -c ./config/pytest.ini --cov app --cov-report=xml:config/cov/converage.xml --cov-report=html:config/cov/htmlcov/
+	open ./config/cov/htmlcov/index.html
+	@echo "Coverage report generated!"

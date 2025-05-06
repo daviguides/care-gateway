@@ -1,29 +1,70 @@
+import os
+
 from typing import AsyncGenerator
-from sqlmodel import SQLModel
+from sqlmodel import SQLModel, create_engine
 from sqlmodel.ext.asyncio.session import AsyncSession
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncEngine
 from sqlalchemy.orm import sessionmaker
 
-# Default database URL
-DATABASE_URL = "postgresql+psycopg://admin:admin@localhost:5432/claims_db"
+# Database URL — you can override this via environment variable
+DATABASE_URL = os.getenv(
+    "DATABASE_URL", "postgresql+psycopg://admin:admin@localhost:5432/claims_db"
+)
 
-# Global objects used by the application
-engine = create_async_engine(DATABASE_URL, echo=True)
+# # --- SQLModel setup (used by FastAPI) ---
+sqlmodel_engine = create_async_engine(
+    DATABASE_URL,
+    echo=True,
+    future=True,
+)
+
 AsyncSessionLocal = sessionmaker(
-    bind=engine, class_=AsyncSession, expire_on_commit=False
+    bind=sqlmodel_engine,
+    class_=AsyncSession,
+    expire_on_commit=False,
 )
 
 
-# Dependency function to get a session (FastAPI will override this in tests)
-async def get_sqlmodel_session() -> AsyncGenerator[AsyncSession, None]:
+async def get_sqlmodel_session() -> AsyncSession:
     async with AsyncSessionLocal() as session:
         yield session
 
 
-# Optional factory for tests
-def create_test_engine(database_url: str) -> AsyncEngine:
-    return create_async_engine(database_url, echo=True)
-
-
 def create_test_session_local(engine: AsyncEngine):
-    return sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
+    return sessionmaker(
+        bind=engine,
+        class_=AsyncSession,
+        expire_on_commit=False,
+    )
+
+
+async def init_sqlmodel_db():
+    """Create all SQLModel tables (for development and testing only)."""
+    from care_gateway.db.sqlmodel_models import models
+
+    async with sqlmodel_engine.begin() as conn:
+        # await conn.run_sync(SQLModel.metadata.drop_all)
+        await conn.run_sync(SQLModel.metadata.create_all)
+
+
+async def dispose_db():
+    await sqlmodel_engine.dispose()
+
+
+# sqlmodel_engine = create_engine(DATABASE_URL, echo=False)
+# Global objects used by the application
+# sqlmodel_engine = create_async_engine(DATABASE_URL, echo=True)
+
+# AsyncSessionLocal = sessionmaker(
+#     bind=sqlmodel_engine, class_=AsyncSession, expire_on_commit=False
+# )
+# Dependency function to get a session (FastAPI will override this in tests)
+# async def get_sqlmodel_session() -> AsyncGenerator[AsyncSession, None]:
+#     """Yield a SQLModel session."""
+#     async with AsyncSessionLocal() as session:
+#         yield session
+
+
+# Optional factory for tests
+# def create_test_engine(database_url: str) -> AsyncEngine:
+#     return create_async_engine(database_url, echo=True)

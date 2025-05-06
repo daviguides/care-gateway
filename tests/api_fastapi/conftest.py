@@ -1,9 +1,12 @@
+from contextlib import asynccontextmanager
+
 import pytest
-from sqlmodel import SQLModel
-from sqlmodel.ext.asyncio.session import AsyncSession
+from asgi_lifespan import LifespanManager
+from httpx import ASGITransport, AsyncClient
 from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.orm import sessionmaker
-from httpx import AsyncClient, ASGITransport
+from sqlmodel import SQLModel
+from sqlmodel.ext.asyncio.session import AsyncSession
 
 from care_gateway.api_fastapi.app import app
 from care_gateway.db.sqlmodel_models.session import (
@@ -52,6 +55,10 @@ async def override_get_session():
 
 @pytest.fixture
 async def client():
-    transport = ASGITransport(app=app)
-    async with AsyncClient(transport=transport, base_url="http://test") as ac:
-        yield ac
+    async with LifespanManager(app):
+        transport = ASGITransport(app=app)
+        async with AsyncClient(
+            transport=transport,
+            base_url="http://test",
+        ) as ac:
+            yield ac

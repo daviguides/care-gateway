@@ -1,6 +1,8 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, scoped_session
 import os
+
+from flask import current_app
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
 
 # Environment-configured database URL
 DATABASE_URL = os.getenv(
@@ -8,13 +10,28 @@ DATABASE_URL = os.getenv(
 )
 
 # Create engine
-engine = create_engine(DATABASE_URL, future=True)
+sqlalchemy_engine = create_engine(
+    DATABASE_URL,
+    future=True,
+)
 
 # Session factory
-SessionFactory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionFactory = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=sqlalchemy_engine,
+)
 
 # Scoped session (for Flask web requests)
 SessionLocal = scoped_session(SessionFactory)
+
+
+def get_session():
+    return current_app.config.get(
+        "DB_SESSION",
+    ) or next(
+        get_sqlalchemy_session(),
+    )
 
 
 def get_sqlalchemy_session():

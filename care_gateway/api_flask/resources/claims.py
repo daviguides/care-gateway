@@ -1,7 +1,8 @@
-from flask import Blueprint, jsonify, abort
-from care_gateway.db.database import get_session
-from care_gateway.db.sqlalchemy_models.models import Claim
+from flask import Blueprint, abort, jsonify
+
 from care_gateway.api_flask.schemas.claim import ClaimSchema
+from care_gateway.db.sqlalchemy_models.models import Claim
+from care_gateway.db.sqlalchemy_models.session import get_session
 
 claims_blueprint = Blueprint("claims", __name__)
 

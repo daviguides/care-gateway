@@ -1,12 +1,9 @@
-from datetime import datetime, timezone
-from uuid import uuid4
-
 import grpc
 from flask import Blueprint, abort, jsonify, request
 
 from care_gateway.api_flask.schemas.claim_event import ClaimEventSchema
-from care_gateway.db.database import get_session
 from care_gateway.db.sqlalchemy_models.models import ClaimEvent
+from care_gateway.db.sqlalchemy_models.session import get_session
 from care_gateway.service_grpc.proto.claims import (
     claims_pb2,
     claims_pb2_grpc,
