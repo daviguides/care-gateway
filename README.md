@@ -5,7 +5,7 @@
   <a href="https://daviguides.github.io/articles/devsecops/2025/04/25/zero-trust-manifest.html"><img src="https://img.shields.io/badge/read-architecture%20article-blueviolet"></a>
   <a href="https://daviguides.github.io/keysentinel/"><img src="https://img.shields.io/badge/docs-online-blue"></a>
   <img src="https://img.shields.io/badge/tests-passing-brightgreen">
-  <img src="https://img.shields.io/badge/coverage-80%25-brightgreen">
+  <img src="https://img.shields.io/badge/coverage-100%25-brightgreen">
 </p>
 
 # 🩺 Care Gateway: All-in-One Portfolio Project
