@@ -14,7 +14,7 @@ DATABASE_URL = os.getenv(
 # # --- SQLModel setup (used by FastAPI) ---
 sqlmodel_engine = create_async_engine(
     DATABASE_URL,
-    echo=True,
+    echo=False,
     future=True,
 )
 

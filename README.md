@@ -96,6 +96,8 @@ GET /claim_events/
 GET /claim_events/by-claim/{claim_id}
 ```
 
+<img src="images/fastapi.png" alt="Fastapi" align="right" style="width: 500px"/>
+
 ---
 
 ### 2. Flask Application

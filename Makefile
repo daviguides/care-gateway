@@ -45,7 +45,7 @@ db-reset:
 	createdb claims_db
 
 test:
-	export ENVIRONMENT=test && pytest -c ./config/pytest.ini --cov-config= ./config/pytest.ini
+	export ENVIRONMENT=test && pytest -c ./config/pytest.ini
 
 cov:
 	export ENVIRONMENT=test && pytest -c ./config/pytest.ini --cov app --cov-report=xml:config/cov/converage.xml --cov-report=html:config/cov/htmlcov/
