@@ -1,0 +1,5 @@
+[run]
+omit =
+    */migrations/*
+    */legacy_code/*
+    */third_party/*

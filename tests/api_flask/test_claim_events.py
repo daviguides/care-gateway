@@ -92,3 +92,26 @@ def test_list_events_by_claim(client, db_session):
     event_types = {e["event_type"] for e in response.json}
     assert "CREATED" in event_types
     assert "REVIEWED" in event_types
+
+
+def test_submit_claim_event(client, monkeypatch):
+    class FakeGRPCResponse:
+        def __init__(self):
+            self.claim_id = "R999"
+            self.success = True
+
+    def fake_submit_claim(request):
+        return FakeGRPCResponse()
+
+    # substitui o método real do stub
+    monkeypatch.setattr(
+        "care_gateway.api_flask.resources.claim_events.claims_stub.SubmitClaim",
+        fake_submit_claim,
+    )
+
+    payload = {"claim_id": "R999"}
+    response = client.post("/claim_events/submit", json=payload)
+    assert response.status_code == 200
+    data = response.get_json()
+    assert data["claim_id"] == "R999"
+    assert data["success"] is True

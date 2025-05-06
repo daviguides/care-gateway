@@ -8,7 +8,7 @@ from sqlmodel.ext.asyncio.session import AsyncSession
 from care_gateway.db.sqlmodel_models.models import Claim, ClaimEvent
 from care_gateway.worker_kafka.edi_etl.edi_transform import convert_to_claim_with_events
 
-from care_gateway.logging_config import setup_logging
+from care_gateway.utils.logging_config import setup_logging
 
 setup_logging()
 logger = logging.getLogger(__name__)

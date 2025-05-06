@@ -1,0 +1,19 @@
+{
+  "claim_id": "C5678",
+  "patient": {
+    "name": "Eve",
+    "dob": "19880101"
+  },
+  "claim_header": {
+    "claim_id": "C5678",
+    "claim_amount": "200.0",
+    "claim_dates": [
+      {
+        "date_cd": "431",
+        "date_format": "D8",
+        "date": "20240101"
+      }
+    ]
+  },
+  "source_file": "source.txt"
+}

@@ -49,22 +49,3 @@ async def init_sqlmodel_db():
 
 async def dispose_db():
     await sqlmodel_engine.dispose()
-
-
-# sqlmodel_engine = create_engine(DATABASE_URL, echo=False)
-# Global objects used by the application
-# sqlmodel_engine = create_async_engine(DATABASE_URL, echo=True)
-
-# AsyncSessionLocal = sessionmaker(
-#     bind=sqlmodel_engine, class_=AsyncSession, expire_on_commit=False
-# )
-# Dependency function to get a session (FastAPI will override this in tests)
-# async def get_sqlmodel_session() -> AsyncGenerator[AsyncSession, None]:
-#     """Yield a SQLModel session."""
-#     async with AsyncSessionLocal() as session:
-#         yield session
-
-
-# Optional factory for tests
-# def create_test_engine(database_url: str) -> AsyncEngine:
-#     return create_async_engine(database_url, echo=True)

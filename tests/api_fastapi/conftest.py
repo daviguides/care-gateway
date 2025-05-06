@@ -12,7 +12,7 @@ from care_gateway.api_fastapi.app import app
 from care_gateway.db.sqlmodel_models.session import (
     get_sqlmodel_session as get_session_original,
 )
-from care_gateway.utils.create_test_db import create_database
+from tests.utils.create_test_db import create_database
 
 # Test database config
 TEST_DB_NAME = "claims_test_db"

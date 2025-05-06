@@ -7,7 +7,7 @@ from .proto.claims import claims_pb2_grpc
 from .proto.greeter import greeter_pb2_grpc
 from .services import EligibilityService, ClaimsService, GreeterServicer
 
-from care_gateway.logging_config import setup_logging
+from care_gateway.utils.logging_config import setup_logging
 
 setup_logging()
 logger = logging.getLogger(__name__)

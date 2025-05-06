@@ -30,6 +30,36 @@ packages = ["care_gateway"]
 [tool.uv.sources]
 databricksx12 = { git = "https://github.com/databricks-industry-solutions/x12-edi-parser" }
 
+[tool.coverage.run]
+concurrency = ["gevent"]
+omit = [
+  "tests/*",
+  "scripts/*",
+  "**/__init__.py",
+  "care_gateway/service_grpc/proto/**/*_pb2.py",
+  "care_gateway/service_grpc/proto/**/*_pb2_grpc.py"
+]
+
+[tool.coverage.report]
+skip_covered = false
+show_missing = true
+exclude_also = [
+     # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self\\.debug",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if __name__ == .__main__.:",
+
+    # Don't complain about abstract methods, they aren't run:
+    "@(abc\\.)?abstractmethod",
+]
+
 [dependency-groups]
 
 # gRPC server and .proto tools
@@ -60,6 +90,8 @@ api-fastapi = [
 
 # Developer tools and code quality
 dev = [
+    "aiosqlite>=0.21.0",
+    "gevent>=25.4.2",
     "ipdb>=0.13.13", # Debugger for development
     "ipykernel>=6.29.5", # Jupyter kernel
     "ipython>=9.2.0", # Interactive shell

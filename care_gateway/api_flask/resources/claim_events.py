@@ -40,21 +40,6 @@ def list_events_by_claim(claim_id):
     return jsonify(many_schema.dump(events))
 
 
-@claim_events_blueprint.route("/", methods=["POST"])
-def create_event():
-    data = request.json
-    session = get_session()
-
-    event = ClaimEvent(
-        claim_id=data["claim_id"],
-        event_type=data["event_type"],
-        details=data.get("details"),
-    )
-    session.add(event)
-    session.commit()
-    return jsonify(event.__dict__), 201
-
-
 @claim_events_blueprint.route("/submit", methods=["POST"])
 def submit_claim_event():
     data = request.get_json(force=True)

@@ -66,11 +66,8 @@ def extract_claim_events_from_dates(
             elif fmt == "DT" and raw_date and len(raw_date) >= 12:
                 event.event_datetime = datetime.strptime(raw_date[:12], "%Y%m%d%H%M")
             elif fmt == "TM" and raw_date and len(raw_date) >= 4:
-                try:
-                    parsed_time = datetime.strptime(raw_date[:4], "%H%M").time()
-                    event.event_time = datetime.combine(date.today(), parsed_time)
-                except Exception:
-                    pass
+                parsed_time = datetime.strptime(raw_date[:4], "%H%M").time()
+                event.event_time = datetime.combine(date.today(), parsed_time)
             elif fmt == "RD8" and raw_date and "-" in raw_date:
                 start_date, *_ = raw_date.split("-")
                 event.event_date = datetime.strptime(start_date, "%Y%m%d").date()

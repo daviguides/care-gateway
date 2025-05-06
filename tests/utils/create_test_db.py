@@ -41,5 +41,15 @@ def create_database(database_url=DATABASE_URL):
                 print(f"Database {db_name} already exists.")
 
 
+def drop_database_if_exists(db_name: str, admin_dsn: str):
+    with psycopg.connect(admin_dsn, autocommit=True) as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = %s",
+                (db_name,),
+            )
+            cur.execute("DROP DATABASE IF EXISTS %s" % db_name)
+
+
 if __name__ == "__main__":
     create_database()

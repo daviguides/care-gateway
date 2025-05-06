@@ -4,7 +4,7 @@ import json
 
 from aiokafka import AIOKafkaProducer
 
-from care_gateway.logging_config import setup_logging
+from care_gateway.utils.logging_config import setup_logging
 
 setup_logging()
 logger = logging.getLogger(__name__)
