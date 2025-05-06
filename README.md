@@ -82,8 +82,6 @@ A look into the ideas, experiments, and lessons behind my code:
 
 ### 1. FastAPI Application
 
-<img src="images/fastapi.png" alt="Fastapi" align="right" style="width: 400px"/>
-
 - Async REST API using **FastAPI** + **SQLModel**
 - Designed for high performance and modern async use cases
 - Fully covered with `pytest-asyncio`
@@ -97,6 +95,7 @@ GET /claims/
 GET /claim_events/
 GET /claim_events/by-claim/{claim_id}
 ```
+<img src="images/fastapi.png" alt="Fastapi" align="center" style="width: 500px"/>
 
 ---
 
@@ -137,8 +136,6 @@ python scripts/run_service_grpc.py
 
 ### 4. ETL Worker (Kafka + Spark)
 
-<img src="images/worker.png" alt="Fastapi" align="right" style="width: 400px"/>
-
 - Event-driven ETL pipeline using **Kafka** and **PySpark**
 - Processes **EDI 837** healthcare claim files via [`databricksx12`](https://github.com/databricks-industry-solutions/x12-edi-parser)
 - Transforms and flattens data into PostgreSQL-ready format
@@ -150,6 +147,8 @@ python scripts/run_service_grpc.py
 1. An `.edi` or `.txt` file lands in S3 (via `sftp2s3`)
 2. A Kafka event is emitted
 3. Worker consumes the event, parses the EDI file, and prepares DB records
+
+<img src="images/worker.png" alt="Worker Kakfa" align="center" style="width: 500px"/>
 
 ---
 
@@ -224,7 +223,7 @@ python scripts/run_kafka_scheduler.py
 pytest --cov=care_gateway --cov-report=term-missing
 ```
 
-<img src="images/cov.png" alt="Fastapi" align="right" style="width: 400px"/>
+<img src="images/cov.png" alt="Coverage" align="center" style="width: 500px"/>
 
 Or test manually with `tests/requests.http`.
 
