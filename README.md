@@ -82,6 +82,8 @@ A look into the ideas, experiments, and lessons behind my code:
 
 ### 1. FastAPI Application
 
+<img src="images/fastapi.png" alt="Fastapi" align="right" style="width: 400px"/>
+
 - Async REST API using **FastAPI** + **SQLModel**
 - Designed for high performance and modern async use cases
 - Fully covered with `pytest-asyncio`
@@ -95,8 +97,6 @@ GET /claims/
 GET /claim_events/
 GET /claim_events/by-claim/{claim_id}
 ```
-
-<img src="images/fastapi.png" alt="Fastapi" align="right" style="width: 500px"/>
 
 ---
 
@@ -136,6 +136,8 @@ python scripts/run_service_grpc.py
 ---
 
 ### 4. ETL Worker (Kafka + Spark)
+
+<img src="images/worker.png" alt="Fastapi" align="right" style="width: 400px"/>
 
 - Event-driven ETL pipeline using **Kafka** and **PySpark**
 - Processes **EDI 837** healthcare claim files via [`databricksx12`](https://github.com/databricks-industry-solutions/x12-edi-parser)
@@ -221,6 +223,8 @@ python scripts/run_kafka_scheduler.py
 ```bash
 pytest --cov=care_gateway --cov-report=term-missing
 ```
+
+<img src="images/cov.png" alt="Fastapi" align="right" style="width: 400px"/>
 
 Or test manually with `tests/requests.http`.
 
